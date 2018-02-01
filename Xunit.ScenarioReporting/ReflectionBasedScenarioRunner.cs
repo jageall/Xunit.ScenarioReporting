@@ -211,7 +211,7 @@ namespace Xunit.ScenarioReporting
 
                 void IWhen<TThen>.Throws<T>(T exception, bool verifyMessage)
                 {
-                    _scenarioDefinition = new ScenarioDefinition(_givens, _when, exception, true);
+                    _scenarioDefinition = new ScenarioDefinition(_givens, _when, exception, verifyMessage);
                 }
 
                 internal ScenarioDefinition Build()
